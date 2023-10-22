@@ -17,12 +17,12 @@ var show = ("Dave Chapple Show","Comedy", 2003)
 let show2 = ("Sparticus", "Action Fiction", 2010)
 
 // Array
-var Sports = ["FootBall", "BasketBall", "Soccer", "MMA"]
-print(Sports)
+var sports = ["FootBall", "BasketBall", "Soccer", "MMA"]
+print(sports)
 
 // Adding To An Array
-Sports.append("Swimming")
-print(Sports)
+sports.append("Swimming")
+print(sports)
 
 // Collection [Any]
 var UFC:[Any] = ["Israel Adesanya", 24, 3, false]
@@ -42,21 +42,21 @@ func matrix()
 matrix()
 
 
-func Get_Rich_Or_Die_Trying()
+func getRichOrDieTrying()
 {
     print("Many man")
 }
 
-Get_Rich_Or_Die_Trying()
+getRichOrDieTrying()
 
 
 //fuctions [params]
-func favorite_Movie(movie:String)
+func favoriteMovie(movie:String)
 {
     print("My favorite Movie is" + " " + movie)
 }
 
-favorite_Movie(movie: "The Fifth Element")
+favoriteMovie(movie: "The Fifth Element")
 
 
 // returning function
