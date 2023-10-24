@@ -3,6 +3,7 @@
     <pages>
         <page name='Assignment1'/>
         <page name='Assignment3'/>
+        <page name='Assignment4'/>
         <page name='Assignment2'/>
     </pages>
 </playground>
