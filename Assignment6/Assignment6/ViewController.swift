@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         
         // movies is accessable because it has internal access [can be used in the same module] [default]
         let repo = MovieRepo()
-        //repo.movies
+        repo.movies
         
         //can not access movies because it have file private access [cant be used outside of the repo2 file]
         let repo2 = MovieRepo2()
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         
         //constructor depency injection results
         do {
-            var result =  try service.findMovie(title: "Ip Man")
+            let result =  try service.findMovie(title: "Ip Man")
             print("Title: \(result.getTitle()), Year: \(result.getYear()), Genre: \(result.getGenre()), Runtime: \(result.getMinutes())")
         } catch let MovieExceptions{
             print(MovieExceptions.localizedDescription)
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         
         //property depency injection results
         do {
-            var result =  try service2.findMovie(title: "American History X")
+            let result =  try service2.findMovie(title: "American History X")
             print("Title: \(result.getTitle()), Year: \(result.getYear()), Genre: \(result.getGenre()), Runtime: \(result.getMinutes())")
         } catch let MovieExceptions{
             print(MovieExceptions.localizedDescription)
@@ -61,11 +61,13 @@ class ViewController: UIViewController {
         
         //method depency injection results
         do {
-            var result =  try service3.findMovie(title: "Friday", repo: repo)
+            let result =  try service3.findMovie(title: "Friday", repo: repo)
             print("Title: \(result.getTitle()), Year: \(result.getYear()), Genre: \(result.getGenre()), Runtime: \(result.getMinutes())")
         } catch let MovieExceptions{
             print(MovieExceptions.localizedDescription)
         }
     }
     
+    //Public -> accessible anywhere [but you can’t use inheritance ]
+    //Open ->  accessible anywhere [supports inheritance]
 }
