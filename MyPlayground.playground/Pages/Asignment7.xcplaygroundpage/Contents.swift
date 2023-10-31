@@ -24,7 +24,7 @@ class Customer{
 }
 
 class SamsClub{
-    var customer:Customer? //WEAK GOES HERE
+    weak var customer:Customer? //WEAK GOES HERE
     var IsMember:Bool
     
     init(IsMember: Bool) {
@@ -71,9 +71,9 @@ cx = nil
 
 //main que [FIFO] [detecated to the UI]
 DispatchQueue.main.async {
-    for x in 0...1000 {
-        print(x)
-    }
+    //for x in 0...1000 {
+       // print(x)
+   // }
     print("First Thread has completed")
 }
 
@@ -89,26 +89,27 @@ serialQue1.async {
     print("serial que 1") //runs first
 }
 
-serialQue1.async {
+serialQue2.async {
     print("serial que 2") //runs second
 }
 
 //concurrent que [order is determined by task]
 let concurentQue1 = DispatchQueue(label: "CQ1", attributes:.concurrent)
-let concurentQue2 = DispatchQueue(label: "CQ2", attributes:.concurrent)
-let concurentQue3 = DispatchQueue(label: "CQ3", attributes:.concurrent)
+//let concurentQue2 = DispatchQueue(label: "CQ2", attributes:.concurrent)
+//let concurentQue3 = DispatchQueue(label: "CQ3", attributes:.concurrent)
 
 concurentQue1.async {
-    for x in 0...1000 {
-        print(x)
-    }
+
     print("Concurrent que 1")  // will finish last
 }
 
-concurentQue2.async {
+concurentQue1.async {
+    //for x in 0...1000 {
+      //  print(x)
+  //  }
     print("Concurrent que 2")
 }
 
-concurentQue3.async {
+concurentQue1.async {
     print("Concurrent que 3")
 }
