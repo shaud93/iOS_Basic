@@ -20,6 +20,7 @@
 		ADCF8E002AF20EAD00613BA3 /* SeasonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF8DFF2AF20EAD00613BA3 /* SeasonViewController.swift */; };
 		ADCF8E022AF210C400613BA3 /* SeasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF8E012AF210C400613BA3 /* SeasonTableViewCell.swift */; };
 		ADCF8E042AF21E4900613BA3 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF8E032AF21E4900613BA3 /* EpisodeViewController.swift */; };
+		ADCF8E082AF2914000613BA3 /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF8E072AF2914000613BA3 /* EpisodeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		ADCF8DFF2AF20EAD00613BA3 /* SeasonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonViewController.swift; sourceTree = "<group>"; };
 		ADCF8E012AF210C400613BA3 /* SeasonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTableViewCell.swift; sourceTree = "<group>"; };
 		ADCF8E032AF21E4900613BA3 /* EpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
+		ADCF8E072AF2914000613BA3 /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,13 +113,14 @@
 				ADC73CD82AF007E70030B97A /* SceneDelegate.swift */,
 				ADC73CDA2AF007E70030B97A /* ViewController.swift */,
 				ADC73CDC2AF007E70030B97A /* Main.storyboard */,
+				ADCF8E072AF2914000613BA3 /* EpisodeTableViewCell.swift */,
 				ADCF8E012AF210C400613BA3 /* SeasonTableViewCell.swift */,
 				ADCF8E032AF21E4900613BA3 /* EpisodeViewController.swift */,
+				ADCF8DFD2AF1F8B400613BA3 /* HomeViewController.swift */,
+				ADCF8DFF2AF20EAD00613BA3 /* SeasonViewController.swift */,
 				ADC73CDF2AF007E90030B97A /* Assets.xcassets */,
 				ADC73CE12AF007E90030B97A /* LaunchScreen.storyboard */,
 				ADC73CE42AF007E90030B97A /* Info.plist */,
-				ADCF8DFD2AF1F8B400613BA3 /* HomeViewController.swift */,
-				ADCF8DFF2AF20EAD00613BA3 /* SeasonViewController.swift */,
 			);
 			path = FirstUi;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADCF8E022AF210C400613BA3 /* SeasonTableViewCell.swift in Sources */,
+				ADCF8E082AF2914000613BA3 /* EpisodeTableViewCell.swift in Sources */,
 				ADCF8E042AF21E4900613BA3 /* EpisodeViewController.swift in Sources */,
 				ADCF8E002AF20EAD00613BA3 /* SeasonViewController.swift in Sources */,
 				ADC73CDB2AF007E70030B97A /* ViewController.swift in Sources */,
