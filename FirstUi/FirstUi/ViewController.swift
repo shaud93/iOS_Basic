@@ -17,9 +17,15 @@ class ViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let desinatedViewController:HomeViewController = segue.destination as! HomeViewController
+        if (segue.destination.title == "HomeViewController"){
+            
+            let desinatedViewController:HomeViewController = segue.destination as! HomeViewController
+            
+            desinatedViewController.homeLabelText = LogInTextField.text!
+            print(segue.destination.title ?? "no")
+            
+        }
         
-        desinatedViewController.homeLabelText = LogInTextField.text!
     }
 }
 

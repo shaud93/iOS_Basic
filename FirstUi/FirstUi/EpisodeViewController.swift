@@ -9,12 +9,11 @@ import UIKit
 
 class EpisodeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    @IBOutlet weak var Table: UITableView!
     var elabel = "HI"
     var s1:NSArray = ["EPISODE 1", "EPISODE 2","EPISODE 3","EPISODE 4","EPISODE 5","EPISODE 6","EPISODE 7","EPISODE 8","EPISODE 9","EPISODE 10","EPISODE 11"]
 //    var s2:NSArray = ["EPISODE 1", "EPISODE 2","EPISODE 3","EPISODE 4","EPISODE 5","EPISODE 6","EPISODE 7","EPISODE 8","EPISODE 9","EPISODE 10"]
     
-    @IBOutlet weak var detaillabel: UILabel!
-    @IBOutlet weak var Elabel: UILabel!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (elabel == "SEASON 1"){
@@ -24,8 +23,17 @@ class EpisodeViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ecell") as! EpisodeTableViewCell
         
+        switch elabel {
+        case "SEASON 1":
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CustID" ) as! CustomTableViewCell
+            cell.CustomLabel.text = s1[indexPath.row] as? String
+            return cell
+        default:
+            print("using default cell")
+        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ecell") as! EpisodeTableViewCell
         cell.etLabel.text = s1[indexPath.row] as? String
         
         return cell
@@ -35,7 +43,8 @@ class EpisodeViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // Elabel.text = "Testing"
+       let celXib = UINib(nibName: "CustomTableViewCell", bundle: nil)
+        Table.register(celXib, forCellReuseIdentifier:"CustID" )
         // Do any additional setup after loading the view.
     }
     
