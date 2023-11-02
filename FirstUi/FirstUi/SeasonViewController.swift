@@ -25,13 +25,16 @@ class SeasonViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let episode = storyboard.instantiateViewController(withIdentifier: "EpisodeViewController") as! EpisodeViewController
-        
+        //send data to next page
+       let storyboard = UIStoryboard(name: "Main", bundle: nil)
+       let episode = storyboard.instantiateViewController(withIdentifier: "EpisodeViewController") as! EpisodeViewController
+//        
         episode.elabel = seasons[indexPath.row] as! String
+//        
+      self.navigationController?.pushViewController(episode, animated:true)
+        //self.present(episode, animated: true)
         
-       // self.navigationController?.pushViewController(episode, animated:true)
-        self.present(episode, animated: true)
+        
         
     }
     

@@ -300,25 +300,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="someonegmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrQ-KE-8BN">
-                                <rect key="frame" x="0.0" y="383" width="393" height="37"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
-                                <color key="textColor" red="0.90588235859999999" green="0.32156863810000003" blue="0.15686275059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rm3-KH-oIN">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="separatorColor" red="0.79215681550000006" green="0.77254903320000001" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ecell" rowHeight="80" id="mYe-iF-2xz" customClass="EpisodeTableViewCell" customModule="FirstUi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mYe-iF-2xz" id="2E3-6I-edr">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ql6-sg-fAV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
+                                                    <color key="textColor" red="0.90588235859999999" green="0.32156863810000003" blue="0.15686275059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ql6-sg-fAV" firstAttribute="leading" secondItem="2E3-6I-edr" secondAttribute="leading" id="E3B-6K-zIe"/>
+                                                <constraint firstItem="ql6-sg-fAV" firstAttribute="top" secondItem="2E3-6I-edr" secondAttribute="top" id="NOx-tZ-KBj"/>
+                                                <constraint firstAttribute="trailing" secondItem="ql6-sg-fAV" secondAttribute="trailing" id="Nfc-Cd-MHI"/>
+                                                <constraint firstAttribute="bottom" secondItem="ql6-sg-fAV" secondAttribute="bottom" id="oDP-5U-KeH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="etLabel" destination="ql6-sg-fAV" id="tLj-yb-foj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZYn-HL-GV4" id="J0Y-qw-EuF"/>
+                                    <outlet property="delegate" destination="ZYn-HL-GV4" id="ju2-yI-cHM"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C2D-6j-GpY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="MrQ-KE-8BN" firstAttribute="leading" secondItem="C2D-6j-GpY" secondAttribute="leading" id="FiA-2A-zA9"/>
-                            <constraint firstItem="MrQ-KE-8BN" firstAttribute="trailing" secondItem="C2D-6j-GpY" secondAttribute="trailing" id="UNx-Ix-HGI"/>
-                            <constraint firstItem="C2D-6j-GpY" firstAttribute="bottom" secondItem="MrQ-KE-8BN" secondAttribute="bottom" constant="398" id="eRz-As-lpz"/>
-                            <constraint firstItem="MrQ-KE-8BN" firstAttribute="top" secondItem="C2D-6j-GpY" secondAttribute="top" constant="324" id="v01-gG-mir"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="Elabel" destination="MrQ-KE-8BN" id="RUy-we-T2q"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l1D-Y7-3eP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
