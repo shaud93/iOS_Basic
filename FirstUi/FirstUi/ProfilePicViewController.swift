@@ -51,6 +51,7 @@ extension ProfilePicViewController:UICollectionViewDelegate {
             //send data to next page
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let json = storyboard.instantiateViewController(withIdentifier: "JsonViewController") as! JsonViewController
+        
             
             self.navigationController?.pushViewController(json, animated:true)
         }

@@ -11,6 +11,8 @@ class JsonViewController: UIViewController {
 
     @IBOutlet weak var Table: UITableView!
     
+    var user2:UserModel?
+    
     var listUsers:[User] = []
     
     override func viewDidLoad() {
@@ -34,17 +36,35 @@ class JsonViewController: UIViewController {
     */
 
     func loadJson(){
-        let bundle = Bundle(for: JsonViewController.self)
-        let url = bundle.url(forResource:"UsersList", withExtension:"json")
-        guard let url = url else {return}
-        
-        do {
-         let rawB = try Data(contentsOf: url)
-         let res = try JSONDecoder().decode(UserModel.self, from: rawB)
-         listUsers = res.data
+       let bundle = Bundle(for: JsonViewController.self)
+       let url = bundle.url(forResource:"UsersList", withExtension:"json")
+       guard let url = url else {return}
+       do {         
+        let rawB = try Data(contentsOf: url)
+        let res = try JSONDecoder().decode(UserModel.self, from: rawB)
+        listUsers = res.data
          print(res)
-        } catch {print(error)}
-    }
+     } catch {print(error)}
+   }
+    
+    
+//    func getUser() async throws -> UserModel{
+//        //holds the url String
+//        let endpoint = "https://reqres.in/api/users"
+//        
+//        //converts string into URL
+//        guard let url = URL(string: endpoint) else {throw custError.invalidUrl}
+//        
+//        let (data, response) = try await URLSession.shared.data(from: url)
+//        
+//       guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {throw custError.invalidResponse}
+//        
+//        let decoder = JSONDecoder()
+//        do{
+//            return try decoder.decode(UserModel.self, from: data)
+//                   
+//        }catch {throw custError.invalidData}
+//   }
 }
 
 extension JsonViewController:UITableViewDataSource {
