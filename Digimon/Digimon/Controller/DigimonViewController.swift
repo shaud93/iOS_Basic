@@ -14,15 +14,25 @@ class DigimonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        callApi()
+        //callDigimonApi()
+        
+        
         
         let celXib = UINib(nibName: "DigimonCustomCollectionViewCell", bundle: nil)
         GRIDTABLE.register(celXib, forCellWithReuseIdentifier:"digiGrid" )
 
         // Do any additional setup after loading the view.
+        callDigimonFromNetworkmanagerUsingProtocolDelegation()
+        
+    }
+    func callDigimonFromNetworkmanagerUsingProtocolDelegation(){
+        let network = NetworkManager()
+        network.networkresponseProtocol = self
+        guard let url = URL(string: "https://digimon-api.vercel.app/api/digimon")else {return}
+        network.getDatafromApiUsingProtocolDelegate(url: url)
     }
     
-    func callApi() {
+    func callDigimonApi() {
         let network = NetworkManager()
         guard let url = URL(string: "https://digimon-api.vercel.app/api/digimon")else {return}
         network.getApi(url: url, modelType: [DigiModel].self) { result in
@@ -30,8 +40,8 @@ class DigimonViewController: UIViewController {
             switch result {
             case .success(let digiData):
                 print("hey")
-                self.digiList = digiData
                 DispatchQueue.main.async {
+                    self.digiList = digiData
                     self.GRIDTABLE.reloadData()
                 }
                 //print(self.digiList)
@@ -71,5 +81,18 @@ extension DigimonViewController:UICollectionViewDelegate{
         detail.namLabel = digiList[indexPath.row].name
         
         self.navigationController?.pushViewController(detail, animated:true)
+    }
+}
+
+extension DigimonViewController:NetworkResponseProtocal{
+    func didFinishWithError(error: Error) {
+        print(error.localizedDescription)
+    }
+    
+    func didFinishWithResponse(digiData:[DigiModel]) {
+        DispatchQueue.main.async {
+            self.digiList = digiData
+            self.GRIDTABLE.reloadData()
+        }
     }
 }

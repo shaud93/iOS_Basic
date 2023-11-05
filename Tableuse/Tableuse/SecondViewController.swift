@@ -1,25 +1,17 @@
 //
-//  DigimonDescriptionViewController.swift
-//  Digimon
+//  SecondViewController.swift
+//  Tableuse
 //
-//  Created by D'Ante Watson on 11/2/23.
+//  Created by D'Ante Watson on 11/5/23.
 //
 
 import UIKit
 
-class DigimonDescriptionViewController: UIViewController {
-    var levelLabel = String()
-    var pic = String()
-    var namLabel = String()//dont use label
-    @IBOutlet weak var LEVELLABEL: UILabel!// use label dont upercase
-    @IBOutlet weak var PIC: UIImageView!
-    @IBOutlet weak var NAMELABEL: UILabel!
+class SecondViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        LEVELLABEL.text = levelLabel
-        PIC.load(urlString: pic)
-        NAMELABEL.text = namLabel
         // Do any additional setup after loading the view.
     }
     

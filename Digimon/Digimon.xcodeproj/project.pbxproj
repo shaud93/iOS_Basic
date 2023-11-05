@@ -25,7 +25,6 @@
 		AD33652B2AF4B03800A6D399 /* DigimonCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365292AF4B03800A6D399 /* DigimonCustomCollectionViewCell.swift */; };
 		AD33652C2AF4B03800A6D399 /* DigimonCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD33652A2AF4B03800A6D399 /* DigimonCustomCollectionViewCell.xib */; };
 		AD33652F2AF4B77900A6D399 /* UIimageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD33652E2AF4B77900A6D399 /* UIimageExtension.swift */; };
-		AD3365312AF4CA4700A6D399 /* DigiPicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365302AF4CA4700A6D399 /* DigiPicCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +67,6 @@
 		AD3365292AF4B03800A6D399 /* DigimonCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonCustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD33652A2AF4B03800A6D399 /* DigimonCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DigimonCustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		AD33652E2AF4B77900A6D399 /* UIimageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIimageExtension.swift; sourceTree = "<group>"; };
-		AD3365302AF4CA4700A6D399 /* DigiPicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiPicCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +164,6 @@
 			children = (
 				AD3365292AF4B03800A6D399 /* DigimonCustomCollectionViewCell.swift */,
 				AD33652A2AF4B03800A6D399 /* DigimonCustomCollectionViewCell.xib */,
-				AD3365302AF4CA4700A6D399 /* DigiPicCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,7 +340,6 @@
 				AD33651A2AF41F7500A6D399 /* DigiModel.swift in Sources */,
 				AD3365202AF4248100A6D399 /* DigimonDescriptionViewController.swift in Sources */,
 				AD3365252AF42CA800A6D399 /* NetworkManager.swift in Sources */,
-				AD3365312AF4CA4700A6D399 /* DigiPicCollectionViewCell.swift in Sources */,
 				AD33652F2AF4B77900A6D399 /* UIimageExtension.swift in Sources */,
 				AD0905D22AF41D6D00BA6389 /* ViewController.swift in Sources */,
 				AD33652B2AF4B03800A6D399 /* DigimonCustomCollectionViewCell.swift in Sources */,
