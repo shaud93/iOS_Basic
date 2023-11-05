@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD0905CE2AF41D6D00BA6389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0905CD2AF41D6D00BA6389 /* AppDelegate.swift */; };
+		AD0905D02AF41D6D00BA6389 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0905CF2AF41D6D00BA6389 /* SceneDelegate.swift */; };
+		AD0905D22AF41D6D00BA6389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0905D12AF41D6D00BA6389 /* ViewController.swift */; };
+		AD0905D52AF41D6D00BA6389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0905D32AF41D6D00BA6389 /* Main.storyboard */; };
+		AD0905D72AF41D6F00BA6389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0905D62AF41D6F00BA6389 /* Assets.xcassets */; };
+		AD0905DA2AF41D6F00BA6389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0905D82AF41D6F00BA6389 /* LaunchScreen.storyboard */; };
+		AD0905E52AF41D6F00BA6389 /* DigimonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0905E42AF41D6F00BA6389 /* DigimonTests.swift */; };
+		AD0905EF2AF41D6F00BA6389 /* DigimonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0905EE2AF41D6F00BA6389 /* DigimonUITests.swift */; };
+		AD0905F12AF41D6F00BA6389 /* DigimonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0905F02AF41D6F00BA6389 /* DigimonUITestsLaunchTests.swift */; };
+		AD33651A2AF41F7500A6D399 /* DigiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365192AF41F7500A6D399 /* DigiModel.swift */; };
+		AD33651C2AF4208900A6D399 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD33651B2AF4208900A6D399 /* HomeViewController.swift */; };
+		AD33651E2AF4216100A6D399 /* DigimonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD33651D2AF4216100A6D399 /* DigimonViewController.swift */; };
+		AD3365202AF4248100A6D399 /* DigimonDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD33651F2AF4248100A6D399 /* DigimonDescriptionViewController.swift */; };
+		AD3365252AF42CA800A6D399 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365242AF42CA800A6D399 /* NetworkManager.swift */; };
+		AD3365282AF4330500A6D399 /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365272AF4330500A6D399 /* Exceptions.swift */; };
+		AD33652B2AF4B03800A6D399 /* DigimonCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365292AF4B03800A6D399 /* DigimonCustomCollectionViewCell.swift */; };
+		AD33652C2AF4B03800A6D399 /* DigimonCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD33652A2AF4B03800A6D399 /* DigimonCustomCollectionViewCell.xib */; };
+		AD33652F2AF4B77900A6D399 /* UIimageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD33652E2AF4B77900A6D399 /* UIimageExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD0905E12AF41D6F00BA6389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD0905C22AF41D6D00BA6389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD0905C92AF41D6D00BA6389;
+			remoteInfo = Digimon;
+		};
+		AD0905EB2AF41D6F00BA6389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD0905C22AF41D6D00BA6389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD0905C92AF41D6D00BA6389;
+			remoteInfo = Digimon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD0905CA2AF41D6D00BA6389 /* Digimon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Digimon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0905CD2AF41D6D00BA6389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD0905CF2AF41D6D00BA6389 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AD0905D12AF41D6D00BA6389 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD0905D42AF41D6D00BA6389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD0905D62AF41D6F00BA6389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD0905D92AF41D6F00BA6389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD0905DB2AF41D6F00BA6389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD0905E02AF41D6F00BA6389 /* DigimonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigimonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0905E42AF41D6F00BA6389 /* DigimonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonTests.swift; sourceTree = "<group>"; };
+		AD0905EA2AF41D6F00BA6389 /* DigimonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigimonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0905EE2AF41D6F00BA6389 /* DigimonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonUITests.swift; sourceTree = "<group>"; };
+		AD0905F02AF41D6F00BA6389 /* DigimonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AD3365192AF41F7500A6D399 /* DigiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiModel.swift; sourceTree = "<group>"; };
+		AD33651B2AF4208900A6D399 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AD33651D2AF4216100A6D399 /* DigimonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonViewController.swift; sourceTree = "<group>"; };
+		AD33651F2AF4248100A6D399 /* DigimonDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonDescriptionViewController.swift; sourceTree = "<group>"; };
+		AD3365242AF42CA800A6D399 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AD3365272AF4330500A6D399 /* Exceptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exceptions.swift; sourceTree = "<group>"; };
+		AD3365292AF4B03800A6D399 /* DigimonCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonCustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		AD33652A2AF4B03800A6D399 /* DigimonCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DigimonCustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		AD33652E2AF4B77900A6D399 /* UIimageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIimageExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD0905C72AF41D6D00BA6389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0905DD2AF41D6F00BA6389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0905E72AF41D6F00BA6389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD0905C12AF41D6D00BA6389 = {
+			isa = PBXGroup;
+			children = (
+				AD0905CC2AF41D6D00BA6389 /* Digimon */,
+				AD0905E32AF41D6F00BA6389 /* DigimonTests */,
+				AD0905ED2AF41D6F00BA6389 /* DigimonUITests */,
+				AD0905CB2AF41D6D00BA6389 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD0905CB2AF41D6D00BA6389 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD0905CA2AF41D6D00BA6389 /* Digimon.app */,
+				AD0905E02AF41D6F00BA6389 /* DigimonTests.xctest */,
+				AD0905EA2AF41D6F00BA6389 /* DigimonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD0905CC2AF41D6D00BA6389 /* Digimon */ = {
+			isa = PBXGroup;
+			children = (
+				AD0905FD2AF41EA400BA6389 /* Model */,
+				AD0905FE2AF41ED200BA6389 /* View */,
+				AD0905FF2AF41EED00BA6389 /* Controller */,
+				AD3365212AF4253F00A6D399 /* NetworkManager */,
+				AD3365262AF432D300A6D399 /* Exceptions */,
+				AD33652D2AF4B6ED00A6D399 /* Extensions */,
+				AD0905CD2AF41D6D00BA6389 /* AppDelegate.swift */,
+				AD0905CF2AF41D6D00BA6389 /* SceneDelegate.swift */,
+				AD0905D12AF41D6D00BA6389 /* ViewController.swift */,
+				AD0905D32AF41D6D00BA6389 /* Main.storyboard */,
+				AD0905D62AF41D6F00BA6389 /* Assets.xcassets */,
+				AD0905D82AF41D6F00BA6389 /* LaunchScreen.storyboard */,
+				AD0905DB2AF41D6F00BA6389 /* Info.plist */,
+			);
+			path = Digimon;
+			sourceTree = "<group>";
+		};
+		AD0905E32AF41D6F00BA6389 /* DigimonTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD0905E42AF41D6F00BA6389 /* DigimonTests.swift */,
+			);
+			path = DigimonTests;
+			sourceTree = "<group>";
+		};
+		AD0905ED2AF41D6F00BA6389 /* DigimonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD0905EE2AF41D6F00BA6389 /* DigimonUITests.swift */,
+				AD0905F02AF41D6F00BA6389 /* DigimonUITestsLaunchTests.swift */,
+			);
+			path = DigimonUITests;
+			sourceTree = "<group>";
+		};
+		AD0905FD2AF41EA400BA6389 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD3365192AF41F7500A6D399 /* DigiModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD0905FE2AF41ED200BA6389 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD3365292AF4B03800A6D399 /* DigimonCustomCollectionViewCell.swift */,
+				AD33652A2AF4B03800A6D399 /* DigimonCustomCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD0905FF2AF41EED00BA6389 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD33651B2AF4208900A6D399 /* HomeViewController.swift */,
+				AD33651D2AF4216100A6D399 /* DigimonViewController.swift */,
+				AD33651F2AF4248100A6D399 /* DigimonDescriptionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AD3365212AF4253F00A6D399 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				AD3365242AF42CA800A6D399 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		AD3365262AF432D300A6D399 /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				AD3365272AF4330500A6D399 /* Exceptions.swift */,
+			);
+			path = Exceptions;
+			sourceTree = "<group>";
+		};
+		AD33652D2AF4B6ED00A6D399 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD33652E2AF4B77900A6D399 /* UIimageExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD0905C92AF41D6D00BA6389 /* Digimon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD0905F42AF41D6F00BA6389 /* Build configuration list for PBXNativeTarget "Digimon" */;
+			buildPhases = (
+				AD0905C62AF41D6D00BA6389 /* Sources */,
+				AD0905C72AF41D6D00BA6389 /* Frameworks */,
+				AD0905C82AF41D6D00BA6389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Digimon;
+			productName = Digimon;
+			productReference = AD0905CA2AF41D6D00BA6389 /* Digimon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD0905DF2AF41D6F00BA6389 /* DigimonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD0905F72AF41D6F00BA6389 /* Build configuration list for PBXNativeTarget "DigimonTests" */;
+			buildPhases = (
+				AD0905DC2AF41D6F00BA6389 /* Sources */,
+				AD0905DD2AF41D6F00BA6389 /* Frameworks */,
+				AD0905DE2AF41D6F00BA6389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD0905E22AF41D6F00BA6389 /* PBXTargetDependency */,
+			);
+			name = DigimonTests;
+			productName = DigimonTests;
+			productReference = AD0905E02AF41D6F00BA6389 /* DigimonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD0905E92AF41D6F00BA6389 /* DigimonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD0905FA2AF41D6F00BA6389 /* Build configuration list for PBXNativeTarget "DigimonUITests" */;
+			buildPhases = (
+				AD0905E62AF41D6F00BA6389 /* Sources */,
+				AD0905E72AF41D6F00BA6389 /* Frameworks */,
+				AD0905E82AF41D6F00BA6389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD0905EC2AF41D6F00BA6389 /* PBXTargetDependency */,
+			);
+			name = DigimonUITests;
+			productName = DigimonUITests;
+			productReference = AD0905EA2AF41D6F00BA6389 /* DigimonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD0905C22AF41D6D00BA6389 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AD0905C92AF41D6D00BA6389 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					AD0905DF2AF41D6F00BA6389 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AD0905C92AF41D6D00BA6389;
+					};
+					AD0905E92AF41D6F00BA6389 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AD0905C92AF41D6D00BA6389;
+					};
+				};
+			};
+			buildConfigurationList = AD0905C52AF41D6D00BA6389 /* Build configuration list for PBXProject "Digimon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD0905C12AF41D6D00BA6389;
+			productRefGroup = AD0905CB2AF41D6D00BA6389 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD0905C92AF41D6D00BA6389 /* Digimon */,
+				AD0905DF2AF41D6F00BA6389 /* DigimonTests */,
+				AD0905E92AF41D6F00BA6389 /* DigimonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD0905C82AF41D6D00BA6389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0905DA2AF41D6F00BA6389 /* LaunchScreen.storyboard in Resources */,
+				AD33652C2AF4B03800A6D399 /* DigimonCustomCollectionViewCell.xib in Resources */,
+				AD0905D72AF41D6F00BA6389 /* Assets.xcassets in Resources */,
+				AD0905D52AF41D6D00BA6389 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0905DE2AF41D6F00BA6389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0905E82AF41D6F00BA6389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD0905C62AF41D6D00BA6389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD33651E2AF4216100A6D399 /* DigimonViewController.swift in Sources */,
+				AD3365282AF4330500A6D399 /* Exceptions.swift in Sources */,
+				AD33651C2AF4208900A6D399 /* HomeViewController.swift in Sources */,
+				AD33651A2AF41F7500A6D399 /* DigiModel.swift in Sources */,
+				AD3365202AF4248100A6D399 /* DigimonDescriptionViewController.swift in Sources */,
+				AD3365252AF42CA800A6D399 /* NetworkManager.swift in Sources */,
+				AD33652F2AF4B77900A6D399 /* UIimageExtension.swift in Sources */,
+				AD0905D22AF41D6D00BA6389 /* ViewController.swift in Sources */,
+				AD33652B2AF4B03800A6D399 /* DigimonCustomCollectionViewCell.swift in Sources */,
+				AD0905CE2AF41D6D00BA6389 /* AppDelegate.swift in Sources */,
+				AD0905D02AF41D6D00BA6389 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0905DC2AF41D6F00BA6389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0905E52AF41D6F00BA6389 /* DigimonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0905E62AF41D6F00BA6389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0905F12AF41D6F00BA6389 /* DigimonUITestsLaunchTests.swift in Sources */,
+				AD0905EF2AF41D6F00BA6389 /* DigimonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD0905E22AF41D6F00BA6389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD0905C92AF41D6D00BA6389 /* Digimon */;
+			targetProxy = AD0905E12AF41D6F00BA6389 /* PBXContainerItemProxy */;
+		};
+		AD0905EC2AF41D6F00BA6389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD0905C92AF41D6D00BA6389 /* Digimon */;
+			targetProxy = AD0905EB2AF41D6F00BA6389 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD0905D32AF41D6D00BA6389 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD0905D42AF41D6D00BA6389 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD0905D82AF41D6F00BA6389 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD0905D92AF41D6F00BA6389 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD0905F22AF41D6F00BA6389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD0905F32AF41D6F00BA6389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD0905F52AF41D6F00BA6389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Digimon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = deante.Digimon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD0905F62AF41D6F00BA6389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Digimon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = deante.Digimon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD0905F82AF41D6F00BA6389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = deante.DigimonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digimon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Digimon";
+			};
+			name = Debug;
+		};
+		AD0905F92AF41D6F00BA6389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = deante.DigimonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digimon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Digimon";
+			};
+			name = Release;
+		};
+		AD0905FB2AF41D6F00BA6389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = deante.DigimonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Digimon;
+			};
+			name = Debug;
+		};
+		AD0905FC2AF41D6F00BA6389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = deante.DigimonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Digimon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD0905C52AF41D6D00BA6389 /* Build configuration list for PBXProject "Digimon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD0905F22AF41D6F00BA6389 /* Debug */,
+				AD0905F32AF41D6F00BA6389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD0905F42AF41D6F00BA6389 /* Build configuration list for PBXNativeTarget "Digimon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD0905F52AF41D6F00BA6389 /* Debug */,
+				AD0905F62AF41D6F00BA6389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD0905F72AF41D6F00BA6389 /* Build configuration list for PBXNativeTarget "DigimonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD0905F82AF41D6F00BA6389 /* Debug */,
+				AD0905F92AF41D6F00BA6389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD0905FA2AF41D6F00BA6389 /* Build configuration list for PBXNativeTarget "DigimonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD0905FB2AF41D6F00BA6389 /* Debug */,
+				AD0905FC2AF41D6F00BA6389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD0905C22AF41D6D00BA6389 /* Project object */;
+}

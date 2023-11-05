@@ -120,6 +120,7 @@
                     <navigationItem key="navigationItem" id="9rU-mU-4i0"/>
                     <connections>
                         <outlet property="LogInTextField" destination="m9G-tS-zLU" id="bJG-5T-u15"/>
+                        <outlet property="PASSWORD" destination="bBh-CE-quE" id="Zym-7U-4iz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
