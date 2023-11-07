@@ -30,7 +30,7 @@ struct UserData {
 }
 
 func getUser() async -> String {
-    let name = "Taylor Swift"
+    let name = "SpongeBob"
     return name
 }
 
@@ -40,7 +40,7 @@ func getHighScores() async -> [Int] {
 }
 
 func getFriends() async -> [String] {
-    let friend = ["Eric", "Maeve", "Otis"]
+    let friend = ["Sandy", "Patrick", "Squidward"]
     return friend
 }
 
@@ -52,3 +52,4 @@ func printUserDetails() async {
     let user = await UserData(name: username, friends: friends, highScores: scores)
     print("Hello, my name is \(user.name), and I have \(user.friends.count) friends!")
 }
+await printUserDetails()
