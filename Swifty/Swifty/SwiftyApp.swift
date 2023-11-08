@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct SwiftyApp: App {
     var network = Network()
+    var navi:UINavigationController?
     var body: some Scene {
         WindowGroup {
             ContentView()
