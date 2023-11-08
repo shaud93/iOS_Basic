@@ -19,6 +19,7 @@
 		AD33657D2AFAB91E00A6D399 /* SwiftToUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD33657C2AFAB91E00A6D399 /* SwiftToUiViewController.swift */; };
 		AD3365812AFADF7A00A6D399 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365802AFADF7A00A6D399 /* WebView.swift */; };
 		AD3365832AFAE3DC00A6D399 /* TabbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365822AFAE3DC00A6D399 /* TabbyView.swift */; };
+		AD3365852AFBBAA400A6D399 /* GeoUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365842AFBBAA300A6D399 /* GeoUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		AD33657C2AFAB91E00A6D399 /* SwiftToUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftToUiViewController.swift; sourceTree = "<group>"; };
 		AD3365802AFADF7A00A6D399 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		AD3365822AFAE3DC00A6D399 /* TabbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbyView.swift; sourceTree = "<group>"; };
+		AD3365842AFBBAA300A6D399 /* GeoUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				AD3365762AF9C06D00A6D399 /* DigimonDetails.swift */,
 				AD3365802AFADF7A00A6D399 /* WebView.swift */,
 				AD3365822AFAE3DC00A6D399 /* TabbyView.swift */,
+				AD3365842AFBBAA300A6D399 /* GeoUIView.swift */,
 				AD33657A2AFAB8D100A6D399 /* Main.storyboard */,
 				AD33657C2AFAB91E00A6D399 /* SwiftToUiViewController.swift */,
 				AD3365662AF9686800A6D399 /* Assets.xcassets */,
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD3365852AFBBAA400A6D399 /* GeoUIView.swift in Sources */,
 				AD3365652AF9686600A6D399 /* ContentView.swift in Sources */,
 				AD3365812AFADF7A00A6D399 /* WebView.swift in Sources */,
 				AD3365732AF9820000A6D399 /* DigimonModel.swift in Sources */,
