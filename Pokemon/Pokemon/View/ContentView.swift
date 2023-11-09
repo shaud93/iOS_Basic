@@ -12,7 +12,6 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             VStack {
-                ScrollView{
                     List(viewModel.pokemonListArray) { x in
                         NavigationLink {
                             DetailSwiftUIView(name: x.name)
@@ -21,7 +20,6 @@ struct ContentView: View {
                         }
                         
                     }
-                }
                 .onAppear{
                     Task{await viewModel.getDataFromviewModel()
                     }
