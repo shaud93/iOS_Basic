@@ -38,6 +38,7 @@ struct DIgiGrid: View {
         }
     }
 }
-//#Preview {
-//    DIgiGrid()
-//}
+#Preview {
+    DIgiGrid()
+        .environmentObject(Network())
+}

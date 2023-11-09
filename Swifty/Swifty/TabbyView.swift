@@ -21,6 +21,11 @@ struct Tabby: View {
                     Image(systemName: "trash.circle.fill")
                     Text("Second Tab")
                 }
+            GeoUIView()
+                .tabItem {
+                    Image(systemName: "trash.circle.fill")
+                    Text("Third Tab")
+                }
         }
     }
 }
