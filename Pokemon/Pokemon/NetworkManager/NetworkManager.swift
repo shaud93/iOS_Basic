@@ -14,10 +14,11 @@ protocol networking {
 class NetworkManager:networking{
     func getDataFromNetworkLayer<T>(url: URL, modeltype: T.Type) async throws -> T where T : Decodable {
         do{
-            let (data,_) = try await URLSession.shared.data(for: data)
-            let parseData = try JSONDecoder().decode(modeltype.self, from: data)
+            let (data,_) = try await URLSession.shared.data(from: url)
+            let parseData = try JSONDecoder().decode(modeltype, from: data)
             return parseData
         }catch{
+            print("wrong data")
             throw error
         }
     }
