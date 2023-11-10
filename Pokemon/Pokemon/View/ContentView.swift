@@ -14,20 +14,20 @@ struct ContentView: View {
             VStack {
                     List(viewModel.pokemonListArray) { x in
                         NavigationLink {
-                            DetailSwiftUIView(name: x.name)
+                            DetailSwiftUIView(name: x.name, img: x.images.small)
                         } label: {
                             Text(x.name)
                         }
                         
                     }
-                .onAppear{
-                    Task{await viewModel.getDataFromviewModel()
+                    .task{
+                        await viewModel.getDataFromviewModel()
                     }
-                    
+                    .refreshable {
+                        await viewModel.getDataFromviewModel()                    }
                 }
             }
         }
-    }
     }
 
 #Preview {

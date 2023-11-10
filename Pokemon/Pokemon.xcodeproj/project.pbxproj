@@ -16,6 +16,7 @@
 		AD3365A72AFC44E800A6D399 /* APIendpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365A62AFC44E800A6D399 /* APIendpoint.swift */; };
 		AD3365A92AFC99DD00A6D399 /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365A82AFC99DD00A6D399 /* PokemonViewModel.swift */; };
 		AD3365AB2AFD1AF600A6D399 /* DetailSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365AA2AFD1AF600A6D399 /* DetailSwiftUIView.swift */; };
+		AD3365AF2AFD776A00A6D399 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365AE2AFD776A00A6D399 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		AD3365A62AFC44E800A6D399 /* APIendpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIendpoint.swift; sourceTree = "<group>"; };
 		AD3365A82AFC99DD00A6D399 /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
 		AD3365AA2AFD1AF600A6D399 /* DetailSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSwiftUIView.swift; sourceTree = "<group>"; };
+		AD3365AE2AFD776A00A6D399 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				AD3365AA2AFD1AF600A6D399 /* DetailSwiftUIView.swift */,
 				AD3365942AFC18FB00A6D399 /* ContentView.swift */,
+				AD3365AE2AFD776A00A6D399 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				AD3365A92AFC99DD00A6D399 /* PokemonViewModel.swift in Sources */,
 				AD3365AB2AFD1AF600A6D399 /* DetailSwiftUIView.swift in Sources */,
 				AD3365A22AFC23B200A6D399 /* PokemonModel.swift in Sources */,
+				AD3365AF2AFD776A00A6D399 /* HomeView.swift in Sources */,
 				AD3365932AFC18FB00A6D399 /* PokemonApp.swift in Sources */,
 				AD3365A72AFC44E800A6D399 /* APIendpoint.swift in Sources */,
 			);

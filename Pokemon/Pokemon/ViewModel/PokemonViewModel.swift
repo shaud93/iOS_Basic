@@ -10,7 +10,6 @@ class PokemonViewModel:ObservableObject{
 var network  = NetworkManager()
     @Published var pokemonListArray = [Pokemon]()
 
-
     func getDataFromviewModel() async{
         do{
             let result = try await network.getDataFromNetworkLayer(url: URL(string:APIendpoint.PokemonListEndpoint)!, modeltype: Response.self)

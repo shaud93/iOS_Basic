@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct DetailSwiftUIView: View {
-    var name:String = ""
+    var name:String = "Test"
+    var img:String = "img"
     var body: some View {
         VStack{
             Text(name)
+            AsyncImage(url: URL(string: img))
         }
         
     }
