@@ -9,17 +9,16 @@ import UIKit
 
 class SeasonViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var seasons:NSArray = ["SEASON 1","SEASON 2","SEASON 3","SEASON 4","SEASON 5","SEASON 6",
-                           "SEASON 7"]
+    let seasonsViewModel = SeasonsViewModel()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return seasons.count
+        return seasonsViewModel.seasons.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "scell") as! SeasonTableViewCell
         
-        cell.SeasonLabel.text = seasons[indexPath.row] as? String
+        cell.SeasonLabel.text = seasonsViewModel.seasons[indexPath.row] as? String
         
         return cell
     }
@@ -29,7 +28,7 @@ class SeasonViewController: UIViewController, UITableViewDelegate, UITableViewDa
        let storyboard = UIStoryboard(name: "Main", bundle: nil)
        let episode = storyboard.instantiateViewController(withIdentifier: "EpisodeViewController") as! EpisodeViewController
 //        
-        episode.elabel = seasons[indexPath.row] as! String
+        episode.elabel = seasonsViewModel.seasons[indexPath.row] as! String
 //        
       self.navigationController?.pushViewController(episode, animated:true)
         //self.present(episode, animated: true)

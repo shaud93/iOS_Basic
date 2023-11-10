@@ -15,6 +15,9 @@
 		AD0905BB2AF38A2800BA6389 /* JsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0905BA2AF38A2800BA6389 /* JsonViewController.swift */; };
 		AD0905BE2AF3CBD300BA6389 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0905BD2AF3CBD300BA6389 /* NetworkManager.swift */; };
 		AD0905C02AF4163900BA6389 /* ExceptionsHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0905BF2AF4163900BA6389 /* ExceptionsHandling.swift */; };
+		AD3365B52AFD7D6A00A6D399 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365B42AFD7D6A00A6D399 /* LoginViewModel.swift */; };
+		AD3365B82AFD7F6B00A6D399 /* SeasonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365B72AFD7F6B00A6D399 /* SeasonsViewModel.swift */; };
+		AD3365BB2AFDDFBA00A6D399 /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3365BA2AFDDFBA00A6D399 /* LoginViewModelTest.swift */; };
 		ADC73CD72AF007E70030B97A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC73CD62AF007E70030B97A /* AppDelegate.swift */; };
 		ADC73CD92AF007E70030B97A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC73CD82AF007E70030B97A /* SceneDelegate.swift */; };
 		ADC73CDB2AF007E70030B97A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC73CDA2AF007E70030B97A /* ViewController.swift */; };
@@ -59,6 +62,9 @@
 		AD0905BA2AF38A2800BA6389 /* JsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonViewController.swift; sourceTree = "<group>"; };
 		AD0905BD2AF3CBD300BA6389 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AD0905BF2AF4163900BA6389 /* ExceptionsHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionsHandling.swift; sourceTree = "<group>"; };
+		AD3365B42AFD7D6A00A6D399 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AD3365B72AFD7F6B00A6D399 /* SeasonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewModel.swift; sourceTree = "<group>"; };
+		AD3365BA2AFDDFBA00A6D399 /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
 		ADC73CD32AF007E70030B97A /* FirstUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC73CD62AF007E70030B97A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADC73CD82AF007E70030B97A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +120,57 @@
 			path = NetworkManager;
 			sourceTree = "<group>";
 		};
+		AD3365B02AFD795200A6D399 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD0905B82AF3853400BA6389 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD3365B12AFD7AD600A6D399 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD0905BA2AF38A2800BA6389 /* JsonViewController.swift */,
+				AD0905B02AF355F100BA6389 /* WebViewController.swift */,
+				ADCF8DFF2AF20EAD00613BA3 /* SeasonViewController.swift */,
+				ADC73CDA2AF007E70030B97A /* ViewController.swift */,
+				ADCF8E0B2AF2A4CF00613BA3 /* ProfilePicCollectionViewCell.swift */,
+				ADCF8E072AF2914000613BA3 /* EpisodeTableViewCell.swift */,
+				ADCF8E092AF2A33100613BA3 /* ProfilePicViewController.swift */,
+				ADCF8DFD2AF1F8B400613BA3 /* HomeViewController.swift */,
+				ADCF8E032AF21E4900613BA3 /* EpisodeViewController.swift */,
+				ADCF8E012AF210C400613BA3 /* SeasonTableViewCell.swift */,
+				AD0905B22AF36E8900BA6389 /* CustomTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD3365B32AFD7C0200A6D399 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD3365B42AFD7D6A00A6D399 /* LoginViewModel.swift */,
+				AD3365B72AFD7F6B00A6D399 /* SeasonsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AD3365B62AFD7E8900A6D399 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AD0905B32AF36E8900BA6389 /* CustomTableViewCell.xib */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		AD3365B92AFD806400A6D399 /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				AD0905BF2AF4163900BA6389 /* ExceptionsHandling.swift */,
+			);
+			path = Exceptions;
+			sourceTree = "<group>";
+		};
 		ADC73CCA2AF007E70030B97A = {
 			isa = PBXGroup;
 			children = (
@@ -137,27 +194,18 @@
 		ADC73CD52AF007E70030B97A /* FirstUi */ = {
 			isa = PBXGroup;
 			children = (
+				AD3365B92AFD806400A6D399 /* Exceptions */,
+				AD3365B62AFD7E8900A6D399 /* Utility */,
+				AD3365B02AFD795200A6D399 /* Model */,
+				AD3365B12AFD7AD600A6D399 /* View */,
+				AD3365B32AFD7C0200A6D399 /* ViewModel */,
 				AD0905BC2AF3CB7100BA6389 /* NetworkManager */,
 				ADC73CDC2AF007E70030B97A /* Main.storyboard */,
 				ADC73CD62AF007E70030B97A /* AppDelegate.swift */,
 				ADC73CD82AF007E70030B97A /* SceneDelegate.swift */,
-				ADC73CDA2AF007E70030B97A /* ViewController.swift */,
-				ADCF8E0B2AF2A4CF00613BA3 /* ProfilePicCollectionViewCell.swift */,
-				ADCF8E072AF2914000613BA3 /* EpisodeTableViewCell.swift */,
-				ADCF8E012AF210C400613BA3 /* SeasonTableViewCell.swift */,
-				AD0905B22AF36E8900BA6389 /* CustomTableViewCell.swift */,
-				ADCF8E032AF21E4900613BA3 /* EpisodeViewController.swift */,
-				ADCF8DFD2AF1F8B400613BA3 /* HomeViewController.swift */,
-				ADCF8DFF2AF20EAD00613BA3 /* SeasonViewController.swift */,
-				AD0905B02AF355F100BA6389 /* WebViewController.swift */,
-				ADCF8E092AF2A33100613BA3 /* ProfilePicViewController.swift */,
-				AD0905BA2AF38A2800BA6389 /* JsonViewController.swift */,
 				ADC73CDF2AF007E90030B97A /* Assets.xcassets */,
-				AD0905B32AF36E8900BA6389 /* CustomTableViewCell.xib */,
 				ADC73CE12AF007E90030B97A /* LaunchScreen.storyboard */,
 				AD0905B62AF3835E00BA6389 /* UsersList.json */,
-				AD0905B82AF3853400BA6389 /* UserModel.swift */,
-				AD0905BF2AF4163900BA6389 /* ExceptionsHandling.swift */,
 				ADC73CE42AF007E90030B97A /* Info.plist */,
 			);
 			path = FirstUi;
@@ -167,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				ADC73CED2AF007E90030B97A /* FirstUiTests.swift */,
+				AD3365BA2AFDDFBA00A6D399 /* LoginViewModelTest.swift */,
 			);
 			path = FirstUiTests;
 			sourceTree = "<group>";
@@ -316,6 +365,7 @@
 				ADCF8E022AF210C400613BA3 /* SeasonTableViewCell.swift in Sources */,
 				AD0905B12AF355F100BA6389 /* WebViewController.swift in Sources */,
 				AD0905BB2AF38A2800BA6389 /* JsonViewController.swift in Sources */,
+				AD3365B82AFD7F6B00A6D399 /* SeasonsViewModel.swift in Sources */,
 				ADCF8E0C2AF2A4CF00613BA3 /* ProfilePicCollectionViewCell.swift in Sources */,
 				ADCF8E082AF2914000613BA3 /* EpisodeTableViewCell.swift in Sources */,
 				ADCF8E0A2AF2A33100613BA3 /* ProfilePicViewController.swift in Sources */,
@@ -323,6 +373,7 @@
 				ADCF8E042AF21E4900613BA3 /* EpisodeViewController.swift in Sources */,
 				AD0905B42AF36E8900BA6389 /* CustomTableViewCell.swift in Sources */,
 				ADCF8E002AF20EAD00613BA3 /* SeasonViewController.swift in Sources */,
+				AD3365B52AFD7D6A00A6D399 /* LoginViewModel.swift in Sources */,
 				AD0905C02AF4163900BA6389 /* ExceptionsHandling.swift in Sources */,
 				ADC73CDB2AF007E70030B97A /* ViewController.swift in Sources */,
 				ADC73CD72AF007E70030B97A /* AppDelegate.swift in Sources */,
@@ -336,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD3365BB2AFDDFBA00A6D399 /* LoginViewModelTest.swift in Sources */,
 				ADC73CEE2AF007E90030B97A /* FirstUiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
