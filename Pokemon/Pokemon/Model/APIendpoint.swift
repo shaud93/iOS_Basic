@@ -8,6 +8,7 @@
 import Foundation
 
 final class APIendpoint {
+    
     static var shared = APIendpoint()
     
 var PokemonListEndpoint = "https://api.pokemontcg.io/v2/cards?page=1&pageSize=100"

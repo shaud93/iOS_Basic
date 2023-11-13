@@ -194,12 +194,12 @@
 		ADC73CD52AF007E70030B97A /* FirstUi */ = {
 			isa = PBXGroup;
 			children = (
-				AD3365B92AFD806400A6D399 /* Exceptions */,
-				AD3365B62AFD7E8900A6D399 /* Utility */,
 				AD3365B02AFD795200A6D399 /* Model */,
 				AD3365B12AFD7AD600A6D399 /* View */,
 				AD3365B32AFD7C0200A6D399 /* ViewModel */,
 				AD0905BC2AF3CB7100BA6389 /* NetworkManager */,
+				AD3365B92AFD806400A6D399 /* Exceptions */,
+				AD3365B62AFD7E8900A6D399 /* Utility */,
 				ADC73CDC2AF007E70030B97A /* Main.storyboard */,
 				ADC73CD62AF007E70030B97A /* AppDelegate.swift */,
 				ADC73CD82AF007E70030B97A /* SceneDelegate.swift */,
