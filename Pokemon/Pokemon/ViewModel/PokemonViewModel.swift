@@ -14,6 +14,7 @@ class PokemonViewModel:ObservableObject{
     }
     
     @Published var pokemonListArray = [Pokemon]()
+    
     //Singleton
     let endpoint = APIendpoint.shared
     
