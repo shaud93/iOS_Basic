@@ -14,6 +14,7 @@ class NetworkManager:networking{
     func getDataFromNetworkLayer<T>(url: URL, modeltype: T.Type) async throws -> T where T : Decodable {
         do{
             let (data,_) = try await URLSession.shared.data(from: url)
+            print(data)
             let parseData = try JSONDecoder().decode(modeltype, from: data)
             return parseData
         }catch{

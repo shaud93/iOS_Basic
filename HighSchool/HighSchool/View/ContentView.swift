@@ -9,10 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            
+        NavigationStack{
+            VStack {
+                HighschoolListViewModel()
+            }
+            .padding()
         }
-        .padding()
     }
 }
 

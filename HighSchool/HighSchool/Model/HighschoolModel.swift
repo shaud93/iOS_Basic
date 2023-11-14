@@ -6,7 +6,13 @@
 //
 
 import Foundation
-struct HighschoolModel:Decodable, Identifiable{
-    let id:String
-    var Welcome = [[String: String]]()
+
+struct School:Codable, Identifiable {
+    let id: String
+    let school_name:String
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "dbn"
+        case school_name
+    }
 }

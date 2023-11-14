@@ -10,8 +10,16 @@ struct HighschoolListViewModel: View {
     @StateObject var viewModel = HighSchoolViewModel()
     var body: some View {
         VStack {
-            List(viewModel.highSchoolListArray.) { x in
-                
+            List(viewModel.highSchoolListArray) { x in
+                HStack{
+                    NavigationLink {
+                        SchoolDetailView(id:x.id)
+                    } label: {
+                        Text(x.school_name)
+                    }
+
+                    
+                }
             }
         }.task{
             await viewModel.getDataFromviewModel()

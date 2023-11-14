@@ -19,6 +19,9 @@
 		ADAAACD32AFECBF300791911 /* HighSchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAACD22AFECBF300791911 /* HighSchoolViewModel.swift */; };
 		ADAAACD52AFECC8700791911 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAACD42AFECC8700791911 /* APIEndpoint.swift */; };
 		ADAAACD72AFECEC000791911 /* HighschoolListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAACD62AFECEC000791911 /* HighschoolListViewModel.swift */; };
+		ADAAACE42B028B4100791911 /* SchoolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAACE32B028B4100791911 /* SchoolDetailView.swift */; };
+		ADAAACE82B02A68500791911 /* HighschoolDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAACE72B02A68500791911 /* HighschoolDetailViewModel.swift */; };
+		ADAAACEA2B02A8AE00791911 /* SchoolDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAACE92B02A8AE00791911 /* SchoolDetailModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		ADAAACD22AFECBF300791911 /* HighSchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighSchoolViewModel.swift; sourceTree = "<group>"; };
 		ADAAACD42AFECC8700791911 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		ADAAACD62AFECEC000791911 /* HighschoolListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighschoolListViewModel.swift; sourceTree = "<group>"; };
+		ADAAACE32B028B4100791911 /* SchoolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailView.swift; sourceTree = "<group>"; };
+		ADAAACE72B02A68500791911 /* HighschoolDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighschoolDetailViewModel.swift; sourceTree = "<group>"; };
+		ADAAACE92B02A8AE00791911 /* SchoolDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +110,11 @@
 		ADAAACA02AFEC66D00791911 /* HighSchool */ = {
 			isa = PBXGroup;
 			children = (
+				ADAAACE22B028AFC00791911 /* View */,
 				ADAAACD12AFECBBF00791911 /* ViewModel */,
 				ADAAACCB2AFEC87600791911 /* Model */,
 				ADAAACD02AFECB2200791911 /* NetworManager */,
 				ADAAACA12AFEC66D00791911 /* HighSchoolApp.swift */,
-				ADAAACA32AFEC66D00791911 /* ContentView.swift */,
 				ADAAACA52AFEC66F00791911 /* Assets.xcassets */,
 				ADAAACA72AFEC66F00791911 /* Preview Content */,
 			);
@@ -144,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				ADAAACCC2AFEC93200791911 /* HighschoolModel.swift */,
+				ADAAACD42AFECC8700791911 /* APIEndpoint.swift */,
+				ADAAACE92B02A8AE00791911 /* SchoolDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,11 +167,20 @@
 		ADAAACD12AFECBBF00791911 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				ADAAACD22AFECBF300791911 /* HighSchoolViewModel.swift */,
-				ADAAACD42AFECC8700791911 /* APIEndpoint.swift */,
 				ADAAACD62AFECEC000791911 /* HighschoolListViewModel.swift */,
+				ADAAACD22AFECBF300791911 /* HighSchoolViewModel.swift */,
+				ADAAACE72B02A68500791911 /* HighschoolDetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ADAAACE22B028AFC00791911 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADAAACA32AFEC66D00791911 /* ContentView.swift */,
+				ADAAACE32B028B4100791911 /* SchoolDetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,12 +314,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADAAACD32AFECBF300791911 /* HighSchoolViewModel.swift in Sources */,
+				ADAAACE82B02A68500791911 /* HighschoolDetailViewModel.swift in Sources */,
 				ADAAACD52AFECC8700791911 /* APIEndpoint.swift in Sources */,
 				ADAAACD72AFECEC000791911 /* HighschoolListViewModel.swift in Sources */,
 				ADAAACCF2AFECB1400791911 /* Networkmanager.swift in Sources */,
+				ADAAACEA2B02A8AE00791911 /* SchoolDetailModel.swift in Sources */,
 				ADAAACCD2AFEC93200791911 /* HighschoolModel.swift in Sources */,
 				ADAAACA42AFEC66D00791911 /* ContentView.swift in Sources */,
 				ADAAACA22AFEC66D00791911 /* HighSchoolApp.swift in Sources */,
+				ADAAACE42B028B4100791911 /* SchoolDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,15 +9,15 @@ import Foundation
 class HighSchoolViewModel:ObservableObject{
     var network  = NetworkManager()
     
-    @Published var highSchoolListArray = 
+    @Published var highSchoolListArray = [School]()
     //Singleton
     let endpoint = APIEndpoint()
     
     func getDataFromviewModel() async{
         do{
-            let result = try await network.getDataFromNetworkLayer(url: URL(string:endpoint.highschoolUrlString)!, modeltype: HighschoolModel.self)
+            let result = try await network.getDataFromNetworkLayer(url: URL(string:endpoint.highschoolUrlString)!, modeltype: [School].self)
             DispatchQueue.main.async {
-                self.highSchoolListArray = [[:]]
+                self.highSchoolListArray = result
             }
     }catch {
         print(error.localizedDescription)
