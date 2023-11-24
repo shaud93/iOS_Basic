@@ -44,15 +44,35 @@ struct SchoolDetailView: View {
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                     .lineLimit(2)
+                    .padding(.top, 40.0)
                 Spacer()
                 Text("Number Of Test Taker: \(satData.1)")
                     .font(.custom("Impact", size: 20))
+                    .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(.red, lineWidth: 4))
                     
                 Text("Average Score Of Critical Reading Test: \(satData.2)")
+                    .font(.custom("Impact", size: 20))
+                    .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(.red, lineWidth: 4))
                     
                 Text("Average Score Of Math Test: \(satData.3)")
+                    .font(.custom("Impact", size: 20))
+                    .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(.red, lineWidth: 4))
                     
                 Text("Average Score Of Writing Test: \(satData.4)")
+                    .font(.custom("Impact", size: 20))
+                    .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(.red, lineWidth: 4))
                     
                 Spacer()
             }

@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2784578466E783E28753726A /* Pods_Yugioh_dataBaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1B7A99853D7B1D1A615914 /* Pods_Yugioh_dataBaseTests.framework */; };
+		714840092E781E07DF69B4FA /* Pods_Yugioh_dataBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E347C191BDA9E7C508E0C864 /* Pods_Yugioh_dataBase.framework */; };
+		7E33A9AAE8B7C5C2EF243CB9 /* Pods_Yugioh_dataBase_Yugioh_dataBaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB9B2CF84AFFB95404AD676 /* Pods_Yugioh_dataBase_Yugioh_dataBaseUITests.framework */; };
+		AD464F732B06526C00DE6537 /* ApiFetchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD464F722B06526C00DE6537 /* ApiFetchHandler.swift */; };
+		AD464F762B0656B200DE6537 /* YugiohModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD464F752B0656B200DE6537 /* YugiohModel.swift */; };
+		AD464F782B067DB200DE6537 /* YugiohList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD464F772B067DB200DE6537 /* YugiohList.swift */; };
+		ADAAACF82B04FD2D00791911 /* Yugioh_dataBaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAACF72B04FD2D00791911 /* Yugioh_dataBaseApp.swift */; };
+		ADAAACFA2B04FD2D00791911 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAACF92B04FD2D00791911 /* LoginView.swift */; };
+		ADAAACFC2B04FD2E00791911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAAACFB2B04FD2E00791911 /* Assets.xcassets */; };
+		ADAAACFF2B04FD2E00791911 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAAACFE2B04FD2E00791911 /* Preview Assets.xcassets */; };
+		ADAAAD092B04FD2E00791911 /* Yugioh_dataBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAAD082B04FD2E00791911 /* Yugioh_dataBaseTests.swift */; };
+		ADAAAD132B04FD2E00791911 /* Yugioh_dataBaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAAD122B04FD2E00791911 /* Yugioh_dataBaseUITests.swift */; };
+		ADAAAD152B04FD2E00791911 /* Yugioh_dataBaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAAD142B04FD2E00791911 /* Yugioh_dataBaseUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADAAAD052B04FD2E00791911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADAAACEC2B04FD2C00791911 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADAAACF32B04FD2D00791911;
+			remoteInfo = Yugioh_dataBase;
+		};
+		ADAAAD0F2B04FD2E00791911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADAAACEC2B04FD2C00791911 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADAAACF32B04FD2D00791911;
+			remoteInfo = Yugioh_dataBase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08DAF316C4E3A8215531208D /* Pods-Yugioh_dataBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yugioh_dataBase.debug.xcconfig"; path = "Target Support Files/Pods-Yugioh_dataBase/Pods-Yugioh_dataBase.debug.xcconfig"; sourceTree = "<group>"; };
+		34D81E2F4BAC494DCFD3AEA7 /* Pods-Yugioh_dataBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yugioh_dataBase.release.xcconfig"; path = "Target Support Files/Pods-Yugioh_dataBase/Pods-Yugioh_dataBase.release.xcconfig"; sourceTree = "<group>"; };
+		4EB9B2CF84AFFB95404AD676 /* Pods_Yugioh_dataBase_Yugioh_dataBaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yugioh_dataBase_Yugioh_dataBaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70225E6B8D1A217A557054C7 /* Pods-Yugioh_dataBase-Yugioh_dataBaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yugioh_dataBase-Yugioh_dataBaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-Yugioh_dataBase-Yugioh_dataBaseUITests/Pods-Yugioh_dataBase-Yugioh_dataBaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		77D42AA03C3679E878DE8971 /* Pods-Yugioh_dataBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yugioh_dataBaseTests.release.xcconfig"; path = "Target Support Files/Pods-Yugioh_dataBaseTests/Pods-Yugioh_dataBaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D1B7A99853D7B1D1A615914 /* Pods_Yugioh_dataBaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yugioh_dataBaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD464F722B06526C00DE6537 /* ApiFetchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFetchHandler.swift; sourceTree = "<group>"; };
+		AD464F752B0656B200DE6537 /* YugiohModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YugiohModel.swift; sourceTree = "<group>"; };
+		AD464F772B067DB200DE6537 /* YugiohList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YugiohList.swift; sourceTree = "<group>"; };
+		ADAAACF42B04FD2D00791911 /* Yugioh_dataBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yugioh_dataBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADAAACF72B04FD2D00791911 /* Yugioh_dataBaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yugioh_dataBaseApp.swift; sourceTree = "<group>"; };
+		ADAAACF92B04FD2D00791911 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		ADAAACFB2B04FD2E00791911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADAAACFE2B04FD2E00791911 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ADAAAD042B04FD2E00791911 /* Yugioh_dataBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Yugioh_dataBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADAAAD082B04FD2E00791911 /* Yugioh_dataBaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yugioh_dataBaseTests.swift; sourceTree = "<group>"; };
+		ADAAAD0E2B04FD2E00791911 /* Yugioh_dataBaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Yugioh_dataBaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADAAAD122B04FD2E00791911 /* Yugioh_dataBaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yugioh_dataBaseUITests.swift; sourceTree = "<group>"; };
+		ADAAAD142B04FD2E00791911 /* Yugioh_dataBaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yugioh_dataBaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC142A2874EBE4AA4565A0AB /* Pods-Yugioh_dataBaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yugioh_dataBaseTests.debug.xcconfig"; path = "Target Support Files/Pods-Yugioh_dataBaseTests/Pods-Yugioh_dataBaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E347C191BDA9E7C508E0C864 /* Pods_Yugioh_dataBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yugioh_dataBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6036E8232FFE84B10710019 /* Pods-Yugioh_dataBase-Yugioh_dataBaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yugioh_dataBase-Yugioh_dataBaseUITests.release.xcconfig"; path = "Target Support Files/Pods-Yugioh_dataBase-Yugioh_dataBaseUITests/Pods-Yugioh_dataBase-Yugioh_dataBaseUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADAAACF12B04FD2D00791911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714840092E781E07DF69B4FA /* Pods_Yugioh_dataBase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADAAAD012B04FD2E00791911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2784578466E783E28753726A /* Pods_Yugioh_dataBaseTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADAAAD0B2B04FD2E00791911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E33A9AAE8B7C5C2EF243CB9 /* Pods_Yugioh_dataBase_Yugioh_dataBaseUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A46363355D35D8CD01C8F79E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08DAF316C4E3A8215531208D /* Pods-Yugioh_dataBase.debug.xcconfig */,
+				34D81E2F4BAC494DCFD3AEA7 /* Pods-Yugioh_dataBase.release.xcconfig */,
+				70225E6B8D1A217A557054C7 /* Pods-Yugioh_dataBase-Yugioh_dataBaseUITests.debug.xcconfig */,
+				E6036E8232FFE84B10710019 /* Pods-Yugioh_dataBase-Yugioh_dataBaseUITests.release.xcconfig */,
+				DC142A2874EBE4AA4565A0AB /* Pods-Yugioh_dataBaseTests.debug.xcconfig */,
+				77D42AA03C3679E878DE8971 /* Pods-Yugioh_dataBaseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD464F712B0650E100DE6537 /* AlamoFireNetWorkManager */ = {
+			isa = PBXGroup;
+			children = (
+				AD464F722B06526C00DE6537 /* ApiFetchHandler.swift */,
+			);
+			path = AlamoFireNetWorkManager;
+			sourceTree = "<group>";
+		};
+		AD464F742B06564E00DE6537 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD464F752B0656B200DE6537 /* YugiohModel.swift */,
+				AD464F772B067DB200DE6537 /* YugiohList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD464F792B07B70000DE6537 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADAAACF92B04FD2D00791911 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADAAACEB2B04FD2C00791911 = {
+			isa = PBXGroup;
+			children = (
+				ADAAACF62B04FD2D00791911 /* Yugioh_dataBase */,
+				ADAAAD072B04FD2E00791911 /* Yugioh_dataBaseTests */,
+				ADAAAD112B04FD2E00791911 /* Yugioh_dataBaseUITests */,
+				ADAAACF52B04FD2D00791911 /* Products */,
+				A46363355D35D8CD01C8F79E /* Pods */,
+				DE41424AA5480676F0C46C16 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ADAAACF52B04FD2D00791911 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADAAACF42B04FD2D00791911 /* Yugioh_dataBase.app */,
+				ADAAAD042B04FD2E00791911 /* Yugioh_dataBaseTests.xctest */,
+				ADAAAD0E2B04FD2E00791911 /* Yugioh_dataBaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADAAACF62B04FD2D00791911 /* Yugioh_dataBase */ = {
+			isa = PBXGroup;
+			children = (
+				AD464F792B07B70000DE6537 /* View */,
+				AD464F742B06564E00DE6537 /* Model */,
+				AD464F712B0650E100DE6537 /* AlamoFireNetWorkManager */,
+				ADAAACFB2B04FD2E00791911 /* Assets.xcassets */,
+				ADAAACF72B04FD2D00791911 /* Yugioh_dataBaseApp.swift */,
+				ADAAACFD2B04FD2E00791911 /* Preview Content */,
+			);
+			path = Yugioh_dataBase;
+			sourceTree = "<group>";
+		};
+		ADAAACFD2B04FD2E00791911 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ADAAACFE2B04FD2E00791911 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ADAAAD072B04FD2E00791911 /* Yugioh_dataBaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADAAAD082B04FD2E00791911 /* Yugioh_dataBaseTests.swift */,
+			);
+			path = Yugioh_dataBaseTests;
+			sourceTree = "<group>";
+		};
+		ADAAAD112B04FD2E00791911 /* Yugioh_dataBaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADAAAD122B04FD2E00791911 /* Yugioh_dataBaseUITests.swift */,
+				ADAAAD142B04FD2E00791911 /* Yugioh_dataBaseUITestsLaunchTests.swift */,
+			);
+			path = Yugioh_dataBaseUITests;
+			sourceTree = "<group>";
+		};
+		DE41424AA5480676F0C46C16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E347C191BDA9E7C508E0C864 /* Pods_Yugioh_dataBase.framework */,
+				4EB9B2CF84AFFB95404AD676 /* Pods_Yugioh_dataBase_Yugioh_dataBaseUITests.framework */,
+				9D1B7A99853D7B1D1A615914 /* Pods_Yugioh_dataBaseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADAAACF32B04FD2D00791911 /* Yugioh_dataBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADAAAD182B04FD2E00791911 /* Build configuration list for PBXNativeTarget "Yugioh_dataBase" */;
+			buildPhases = (
+				236AA1774BFE7F738EA1B37D /* [CP] Check Pods Manifest.lock */,
+				ADAAACF02B04FD2D00791911 /* Sources */,
+				ADAAACF12B04FD2D00791911 /* Frameworks */,
+				ADAAACF22B04FD2D00791911 /* Resources */,
+				890FF6493719D024A038F5ED /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yugioh_dataBase;
+			productName = Yugioh_dataBase;
+			productReference = ADAAACF42B04FD2D00791911 /* Yugioh_dataBase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADAAAD032B04FD2E00791911 /* Yugioh_dataBaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADAAAD1B2B04FD2E00791911 /* Build configuration list for PBXNativeTarget "Yugioh_dataBaseTests" */;
+			buildPhases = (
+				5B9425B88CB1F1BFCF6FBFC4 /* [CP] Check Pods Manifest.lock */,
+				ADAAAD002B04FD2E00791911 /* Sources */,
+				ADAAAD012B04FD2E00791911 /* Frameworks */,
+				ADAAAD022B04FD2E00791911 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADAAAD062B04FD2E00791911 /* PBXTargetDependency */,
+			);
+			name = Yugioh_dataBaseTests;
+			productName = Yugioh_dataBaseTests;
+			productReference = ADAAAD042B04FD2E00791911 /* Yugioh_dataBaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADAAAD0D2B04FD2E00791911 /* Yugioh_dataBaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADAAAD1E2B04FD2E00791911 /* Build configuration list for PBXNativeTarget "Yugioh_dataBaseUITests" */;
+			buildPhases = (
+				F00DE1464629D59DEB6ADD8B /* [CP] Check Pods Manifest.lock */,
+				ADAAAD0A2B04FD2E00791911 /* Sources */,
+				ADAAAD0B2B04FD2E00791911 /* Frameworks */,
+				ADAAAD0C2B04FD2E00791911 /* Resources */,
+				0A450E635F1449651D8E2D1E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADAAAD102B04FD2E00791911 /* PBXTargetDependency */,
+			);
+			name = Yugioh_dataBaseUITests;
+			productName = Yugioh_dataBaseUITests;
+			productReference = ADAAAD0E2B04FD2E00791911 /* Yugioh_dataBaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADAAACEC2B04FD2C00791911 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					ADAAACF32B04FD2D00791911 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					ADAAAD032B04FD2E00791911 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = ADAAACF32B04FD2D00791911;
+					};
+					ADAAAD0D2B04FD2E00791911 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = ADAAACF32B04FD2D00791911;
+					};
+				};
+			};
+			buildConfigurationList = ADAAACEF2B04FD2C00791911 /* Build configuration list for PBXProject "Yugioh_dataBase" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADAAACEB2B04FD2C00791911;
+			productRefGroup = ADAAACF52B04FD2D00791911 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADAAACF32B04FD2D00791911 /* Yugioh_dataBase */,
+				ADAAAD032B04FD2E00791911 /* Yugioh_dataBaseTests */,
+				ADAAAD0D2B04FD2E00791911 /* Yugioh_dataBaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADAAACF22B04FD2D00791911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADAAACFF2B04FD2E00791911 /* Preview Assets.xcassets in Resources */,
+				ADAAACFC2B04FD2E00791911 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADAAAD022B04FD2E00791911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADAAAD0C2B04FD2E00791911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A450E635F1449651D8E2D1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yugioh_dataBase-Yugioh_dataBaseUITests/Pods-Yugioh_dataBase-Yugioh_dataBaseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yugioh_dataBase-Yugioh_dataBaseUITests/Pods-Yugioh_dataBase-Yugioh_dataBaseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yugioh_dataBase-Yugioh_dataBaseUITests/Pods-Yugioh_dataBase-Yugioh_dataBaseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		236AA1774BFE7F738EA1B37D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yugioh_dataBase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B9425B88CB1F1BFCF6FBFC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yugioh_dataBaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		890FF6493719D024A038F5ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yugioh_dataBase/Pods-Yugioh_dataBase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yugioh_dataBase/Pods-Yugioh_dataBase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yugioh_dataBase/Pods-Yugioh_dataBase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F00DE1464629D59DEB6ADD8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yugioh_dataBase-Yugioh_dataBaseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADAAACF02B04FD2D00791911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADAAACFA2B04FD2D00791911 /* LoginView.swift in Sources */,
+				AD464F782B067DB200DE6537 /* YugiohList.swift in Sources */,
+				AD464F732B06526C00DE6537 /* ApiFetchHandler.swift in Sources */,
+				AD464F762B0656B200DE6537 /* YugiohModel.swift in Sources */,
+				ADAAACF82B04FD2D00791911 /* Yugioh_dataBaseApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADAAAD002B04FD2E00791911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADAAAD092B04FD2E00791911 /* Yugioh_dataBaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADAAAD0A2B04FD2E00791911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADAAAD152B04FD2E00791911 /* Yugioh_dataBaseUITestsLaunchTests.swift in Sources */,
+				ADAAAD132B04FD2E00791911 /* Yugioh_dataBaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADAAAD062B04FD2E00791911 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADAAACF32B04FD2D00791911 /* Yugioh_dataBase */;
+			targetProxy = ADAAAD052B04FD2E00791911 /* PBXContainerItemProxy */;
+		};
+		ADAAAD102B04FD2E00791911 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADAAACF32B04FD2D00791911 /* Yugioh_dataBase */;
+			targetProxy = ADAAAD0F2B04FD2E00791911 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ADAAAD162B04FD2E00791911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADAAAD172B04FD2E00791911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADAAAD192B04FD2E00791911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08DAF316C4E3A8215531208D /* Pods-Yugioh_dataBase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yugioh_dataBase/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "deante.Yugioh-dataBase";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADAAAD1A2B04FD2E00791911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D81E2F4BAC494DCFD3AEA7 /* Pods-Yugioh_dataBase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yugioh_dataBase/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "deante.Yugioh-dataBase";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADAAAD1C2B04FD2E00791911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC142A2874EBE4AA4565A0AB /* Pods-Yugioh_dataBaseTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "deante.Yugioh-dataBaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yugioh_dataBase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yugioh_dataBase";
+			};
+			name = Debug;
+		};
+		ADAAAD1D2B04FD2E00791911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D42AA03C3679E878DE8971 /* Pods-Yugioh_dataBaseTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "deante.Yugioh-dataBaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yugioh_dataBase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yugioh_dataBase";
+			};
+			name = Release;
+		};
+		ADAAAD1F2B04FD2E00791911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70225E6B8D1A217A557054C7 /* Pods-Yugioh_dataBase-Yugioh_dataBaseUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "deante.Yugioh-dataBaseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Yugioh_dataBase;
+			};
+			name = Debug;
+		};
+		ADAAAD202B04FD2E00791911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6036E8232FFE84B10710019 /* Pods-Yugioh_dataBase-Yugioh_dataBaseUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "deante.Yugioh-dataBaseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Yugioh_dataBase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADAAACEF2B04FD2C00791911 /* Build configuration list for PBXProject "Yugioh_dataBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADAAAD162B04FD2E00791911 /* Debug */,
+				ADAAAD172B04FD2E00791911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADAAAD182B04FD2E00791911 /* Build configuration list for PBXNativeTarget "Yugioh_dataBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADAAAD192B04FD2E00791911 /* Debug */,
+				ADAAAD1A2B04FD2E00791911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADAAAD1B2B04FD2E00791911 /* Build configuration list for PBXNativeTarget "Yugioh_dataBaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADAAAD1C2B04FD2E00791911 /* Debug */,
+				ADAAAD1D2B04FD2E00791911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADAAAD1E2B04FD2E00791911 /* Build configuration list for PBXNativeTarget "Yugioh_dataBaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADAAAD1F2B04FD2E00791911 /* Debug */,
+				ADAAAD202B04FD2E00791911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADAAACEC2B04FD2C00791911 /* Project object */;
+}

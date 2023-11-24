@@ -1,0 +1,6 @@
+framework module Pods_Yugioh_dataBase_Yugioh_dataBaseUITests {
+  umbrella header "Pods-Yugioh_dataBase-Yugioh_dataBaseUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
