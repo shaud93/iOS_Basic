@@ -64,6 +64,7 @@
 		AD1606A22B10118000002F9C /* KeyChainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainView.swift; sourceTree = "<group>"; };
 		AD1606A42B1011A100002F9C /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		AD1606A72B101C6600002F9C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		AD8AE3B52B1679D000D9F14B /* CoreDataExample 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreDataExample 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -667,6 +668,7 @@
 		AD16066A2B1003B200002F9C /* CoreDataExample.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				AD8AE3B52B1679D000D9F14B /* CoreDataExample 2.xcdatamodel */,
 				AD16066B2B1003B200002F9C /* CoreDataExample.xcdatamodel */,
 			);
 			currentVersion = AD16066B2B1003B200002F9C /* CoreDataExample.xcdatamodel */;
