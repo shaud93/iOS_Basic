@@ -66,7 +66,7 @@ class ViewController: UIViewController, FUIAuthDelegate {
             
             self.navigationController?.pushViewController(detail, animated:true)
             } else {
-                // HANDLE Error
+                fatalError("SIGN IN FAILED")
             }
         
     }
