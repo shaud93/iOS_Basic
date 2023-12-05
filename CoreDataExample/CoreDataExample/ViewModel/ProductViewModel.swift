@@ -15,7 +15,7 @@ class ProductViewModel:ObservableObject {
     
     @Published var customError:NetworkError?
     
-    let coreDataManager = CoreDataManager(context: PersistenceController.shared.container.viewContext)
+    let coreDataManager = CoreDataManager()
     
     var cancelabel = Set<AnyCancellable>()
     
