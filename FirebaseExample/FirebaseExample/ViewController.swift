@@ -10,6 +10,7 @@ import FirebaseAuth
 import FirebaseAuthUI
 import FirebaseEmailAuthUI
 import FirebaseGoogleAuthUI
+import FirebaseAnalytics
 
 class ViewController: UIViewController, FUIAuthDelegate {
 
@@ -43,6 +44,11 @@ class ViewController: UIViewController, FUIAuthDelegate {
     }
     
     @IBAction func signIn(_ sender: Any) {
+        
+        Analytics.logEvent(AnalyticsEventLogin, parameters: [
+            "Event":"Sign up"
+        ])
+        
         let authUI = FUIAuth.defaultAuthUI()!
         // You need to adopt a FUIAuthDelegate protocol to receive callback
         authUI.delegate = self

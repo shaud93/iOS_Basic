@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LocationModel:Decodable {
+struct LocationModel:Decodable, Identifiable {
     var id: Int
     var name: String
     var address:Address
