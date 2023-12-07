@@ -19,6 +19,7 @@
 		AD6772C32B1D474600FB2AE3 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6772C22B1D474600FB2AE3 /* MapViewModel.swift */; };
 		AD6772C52B1D48AA00FB2AE3 /* ApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6772C42B1D48AA00FB2AE3 /* ApiEndpoints.swift */; };
 		AD6772C72B1D502500FB2AE3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6772C62B1D502500FB2AE3 /* MapView.swift */; };
+		AD67730B2B1E5B4D00FB2AE3 /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD67730A2B1E5B4C00FB2AE3 /* UserLocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		AD6772C22B1D474600FB2AE3 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		AD6772C42B1D48AA00FB2AE3 /* ApiEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoints.swift; sourceTree = "<group>"; };
 		AD6772C62B1D502500FB2AE3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		AD67730A2B1E5B4C00FB2AE3 /* UserLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				AD67728D2B1D353A00FB2AE3 /* MapKit_PracticeApp.swift */,
 				AD67728F2B1D353A00FB2AE3 /* ContentView.swift */,
 				AD6772912B1D353C00FB2AE3 /* Assets.xcassets */,
+				AD67730A2B1E5B4C00FB2AE3 /* UserLocationManager.swift */,
 				AD6772932B1D353C00FB2AE3 /* Preview Content */,
 			);
 			path = MapKit_Practice;
@@ -311,6 +314,7 @@
 				AD6772BD2B1D38A300FB2AE3 /* LocationNetworkManager.swift in Sources */,
 				AD6772BA2B1D36A100FB2AE3 /* LocationModel.swift in Sources */,
 				AD67728E2B1D353A00FB2AE3 /* MapKit_PracticeApp.swift in Sources */,
+				AD67730B2B1E5B4D00FB2AE3 /* UserLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +480,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MapKit_Practice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "need location to serve better";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -504,6 +509,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MapKit_Practice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "need location to serve better";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
